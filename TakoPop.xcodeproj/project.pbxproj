@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		87D0B26A1FB8E08200342BC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0B2691FB8E08200342BC0 /* AppDelegate.swift */; };
-		87D0B26C1FB8E08200342BC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0B26B1FB8E08200342BC0 /* ViewController.swift */; };
 		87D0B26F1FB8E08200342BC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D0B26D1FB8E08200342BC0 /* Main.storyboard */; };
 		87D0B2711FB8E08200342BC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D0B2701FB8E08200342BC0 /* Assets.xcassets */; };
 		87D0B2741FB8E08200342BC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87D0B2721FB8E08200342BC0 /* LaunchScreen.storyboard */; };
+		87D0B2821FB8E2E900342BC0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D0B2811FB8E2E900342BC0 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		87D0B2661FB8E08200342BC0 /* TakoPop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TakoPop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D0B2691FB8E08200342BC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		87D0B26B1FB8E08200342BC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		87D0B26E1FB8E08200342BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87D0B2701FB8E08200342BC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87D0B2731FB8E08200342BC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87D0B2751FB8E08200342BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87D0B2811FB8E2E900342BC0 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainVC.swift; path = ../../../TakoPOP/TakoPOP/Controller/MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +38,7 @@
 		87D0B25D1FB8E08200342BC0 = {
 			isa = PBXGroup;
 			children = (
-				87D0B2681FB8E08200342BC0 /* TakoPop */,
+				87D0B2681FB8E08200342BC0 /* TakoPOP */,
 				87D0B2671FB8E08200342BC0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,17 +51,65 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		87D0B2681FB8E08200342BC0 /* TakoPop */ = {
+		87D0B2681FB8E08200342BC0 /* TakoPOP */ = {
+			isa = PBXGroup;
+			children = (
+				87D0B2801FB8E25600342BC0 /* Extansions */,
+				87D0B27F1FB8E22B00342BC0 /* Protocols */,
+				87D0B27C1FB8E20500342BC0 /* Model */,
+				87D0B27D1FB8E21100342BC0 /* View */,
+				87D0B27B1FB8E1F700342BC0 /* Controller */,
+				87D0B27E1FB8E21C00342BC0 /* Resources */,
+			);
+			path = TakoPOP;
+			sourceTree = "<group>";
+		};
+		87D0B27B1FB8E1F700342BC0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				87D0B2691FB8E08200342BC0 /* AppDelegate.swift */,
-				87D0B26B1FB8E08200342BC0 /* ViewController.swift */,
-				87D0B26D1FB8E08200342BC0 /* Main.storyboard */,
-				87D0B2701FB8E08200342BC0 /* Assets.xcassets */,
+				87D0B2811FB8E2E900342BC0 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		87D0B27C1FB8E20500342BC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		87D0B27D1FB8E21100342BC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				87D0B2721FB8E08200342BC0 /* LaunchScreen.storyboard */,
+				87D0B26D1FB8E08200342BC0 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		87D0B27E1FB8E21C00342BC0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				87D0B2701FB8E08200342BC0 /* Assets.xcassets */,
 				87D0B2751FB8E08200342BC0 /* Info.plist */,
 			);
-			path = TakoPop;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		87D0B27F1FB8E22B00342BC0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		87D0B2801FB8E25600342BC0 /* Extansions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extansions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +184,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87D0B26C1FB8E08200342BC0 /* ViewController.swift in Sources */,
 				87D0B26A1FB8E08200342BC0 /* AppDelegate.swift in Sources */,
+				87D0B2821FB8E2E900342BC0 /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
