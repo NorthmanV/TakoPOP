@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TacoCell" id="gTV-IL-0wX" customClass="TacoCell" customModule="TakoPop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Brisket_Tacos" translatesAutoresizingMaskIntoConstraints="NO" id="8Kc-1A-DuL">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="106.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brisket Taco" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pnL-KY-Oc2">
+                        <rect key="frame" x="5" y="111.5" width="130" height="23.5"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="pnL-KY-Oc2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Be8-Ll-9Pq"/>
+                <constraint firstAttribute="trailing" secondItem="8Kc-1A-DuL" secondAttribute="trailing" id="E1C-f0-TtS"/>
+                <constraint firstItem="pnL-KY-Oc2" firstAttribute="top" secondItem="8Kc-1A-DuL" secondAttribute="bottom" constant="5" id="VjP-an-Hhe"/>
+                <constraint firstAttribute="trailing" secondItem="pnL-KY-Oc2" secondAttribute="trailing" constant="5" id="awy-mh-IoN"/>
+                <constraint firstAttribute="bottom" secondItem="pnL-KY-Oc2" secondAttribute="bottom" constant="5" id="eK2-Qy-V6l"/>
+                <constraint firstItem="8Kc-1A-DuL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ky7-TG-ifL"/>
+                <constraint firstItem="8Kc-1A-DuL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oJN-gt-Xjs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="261" height="247"/>
+            <connections>
+                <outlet property="tacoImage" destination="8Kc-1A-DuL" id="gyY-ZW-1Rp"/>
+                <outlet property="tacoLabel" destination="pnL-KY-Oc2" id="AZL-gs-3fB"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="152"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Brisket_Tacos" width="1024" height="678"/>
+    </resources>
+</document>
